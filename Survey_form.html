@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Bleach Form</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Formulário sobre Bleach</h1>
+            <p id="description" class="description text-center">Teste seus conhecimentos sobre o anime Bleach!</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="kuchiki-label" for="kuchiki">Qual o sobrenome da familía de Rukia</label>
+                <input type="text" name="kuchiki" id="kuchiki" class="form-control" placeholder="Senbonzakura" required />
+            </div>
+            <div class="form-group">
+                <label id="kon-label" for="kon">Qual o nome da alma modificada que vive na casa do Ichigo?</label>
+                <input type="text" name="kon" id="kon" class="form-control" placeholder="ichigo de pelúcia"
+                    required />
+            </div>
+            <div class="form-group">
+                <p>Quais desses personagens já foi ou é capitão/capitã da divisão 2 e 10?</p>
+
+                <label><input name="division" value="Renji-Abarai" type="checkbox" class="input-checkbox" />Renji Abarai</label>
+                <label><input name="division" value="Yoruichi-Shihoin" type="checkbox" class="input-checkbox" />Yoruichi Shihoin</label>
+                <label><input name="division" value="Zaraki-Kenpachi" type="checkbox" class="input-checkbox" />Zaraki Kenpachi</label>
+                <label><input name="division" value="Ichigo Kurosaki" type="checkbox" class="input-checkbox" />Ichigo Kurosaki</label>
+                <label><input name="division" value="Soi-Fong" type="checkbox" class="input-checkbox" />Soi Fong</label>
+                <label><input name="division" value="Toshiro-Hitsugaya" type="checkbox" class="input-checkbox" />Toshiro Hitsugaya</label>
+                <label><input name="division" value="Sosuke-Aizen" type="checkbox" class="input-checkbox" />Sosuke Aizen</label>
+                <label><input name="division" value="Tier-Harribel" type="checkbox" class="input-checkbox" />Tier Harribel</label>
+                <label><input name="division" value="Byakuya-kuchiki" type="checkbox" class="input-checkbox" />Byakuya kuchiki</label>
+                <label><input name="division" value="Isshin-Kurosaki" type="checkbox" class="input-checkbox" />Isshin Kurosaki</label>
+                <label><input name="division" value="Orihime-Inoue" type="checkbox" class="input-checkbox" />Orihime Inoue</label>
+            </div>
+            <div class="form-group frase">
+                <p>"Você luta para ficar mais forte ou fica mais forte para lutar?"</p>
+            </div>
+            <div class="form-group">
+                <p>De quem é a frase acima?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Clique aqui</option>
+                    <option value="Ichigo">Ichigo Kurosaki</option>
+                    <option value="Zoro">Roronoa Zoro</option>
+                    <option value="Kenpachi">Zaraki Kenpachi</option>
+                    <option value="Light">Light Yagami</option>
+                    <option value="Gon">Gon Freecss</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Ichigo já nasceu como um ceifero de almas?</p>
+                <label>
+                    <input name="user-recommend" value="sim" type="radio" class="input-radio"
+                        checked />Sim, ele nasceu assim</label>
+                <label>
+                    <input name="user-recommend" value="talvez" type="radio" class="input-radio" />Não tenho certeza</label>
+
+                <label><input name="user-recommend" value="nao" type="radio" class="input-radio" />Não, nasceu humano</label>
+            </div>
+
+            <div class="form-group">
+                <p>Quais desses jargões existem no mundo de Bleach?</p>
+
+                <label><input name="jargao" value="Shinigami" type="checkbox" class="input-checkbox" />Ceifeiro de Almas</label>
+                <label><input name="jargao" value="Akuma no Mi" type="checkbox" class="input-checkbox" />Fruta do Diabo</label>
+                <label><input name="jargao" value="Quincy" type="checkbox" class="input-checkbox" />Quincy</label>
+                <label><input name="jargao" value="Seireitei" type="checkbox" class="input-checkbox" />Seireitei</label>
+                <label><input name="jargao" value="kaizoku-gari" type="checkbox" class="input-checkbox" />Caçador de Piratas</label>
+                <label><input name="jargao" value="Ninja" type="checkbox" class="input-checkbox" />Ninja</label>
+                <label><input name="jargao" value="espiritual" type="checkbox" class="input-checkbox" />Pressão Espiritual</label>
+                <label><input name="jargao" value="Hollow" type="checkbox" class="input-checkbox" />Hollow</label>
+                <label><input name="jargao" value="menos" type="checkbox" class="input-checkbox" />Menos Grande</label>
+                <label><input name="jargao" value="Hado" type="checkbox" class="input-checkbox" />Shakkaho</label>
+                <label><input name="jargao" value="Pirata" type="checkbox"class="input-checkbox" />Pirata</label>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+        <footer class="footer">
+            <p>Formulário feito por Jonathan Oliveira.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
